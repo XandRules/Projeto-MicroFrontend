@@ -18,8 +18,21 @@
   -->
 
   <main>
+
+    <nav>
+      <application name="@mfe/navbar"></application>
+    </nav>
+
     <route default>
+
       <application name="@single-spa/welcome"></application>
+    </route>
+
+    <route path="/app1">
+      <application name="@mfe/app1"></application>
+    </route>
+    <route path="/app2">
+      <application name="@mfe/app2"></application>
     </route>
   </main>
 </single-spa-router>
